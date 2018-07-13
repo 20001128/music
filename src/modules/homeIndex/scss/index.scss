@@ -1,0 +1,125 @@
+.homeMian{
+    height: 100vh;
+    overflow: hidden;
+    background: url('../../../assets/images/homeIndex/bgImg.jpg') no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    background-position: center center;
+}
+  .homeHead{
+    display: flex;
+    background: #cbcab3 !important;
+  }
+  .kg{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  p{
+    padding: .2rem .4rem;
+    border-radius: 100%;
+    border: 1px solid #e6e6e6;
+    color: #e6e6e6;
+    font-weight: bold;
+  }
+  }
+  .tabItem{
+    width: 70%;
+  }
+  .kg img{
+    width: 2.78rem;
+  }
+  .vux-tab{
+    background: none !important;
+  }
+  .vux-tab-ink-bar{
+    background:none !important;
+  }
+  .vux-tab .vux-tab-item.vux-tab-selected{
+    color: white !important;
+    border-bottom: none !important;
+    font-size: 1.2rem !important;
+    text-shadow:0 0 0.2em #ffffff,
+    -0 -0 0.2em #ffffff !important;
+  }
+  .vux-tab .vux-tab-item{
+    font-size: 1rem !important;
+    background: none !important;
+    line-height: 3.6rem !important;
+  }
+  .vux-popup-mask{
+  background: none !important;
+}
+.popupRegistar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+    filter: alpha(opacity=60);  
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1000;
+    .popupContent{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 30%;
+      text-align: center;
+      background-color: #35353a;
+      z-Index: 9999;
+      .popupContent_body{
+        margin-left: -6rem;
+        height: 100%;
+        .popupContent_body_fit{
+          padding-left: 2.5rem;
+          padding-top: 1rem;
+          width: 93.6%;
+          height: 7rem;
+          background: url('../../../assets/images/homeIndex/loading.jpg') no-repeat;
+          background-size: cover;
+          background-position: center center;
+          p{
+            margin:0 !important;
+            img{
+              width: 5rem;
+              height: 4rem;
+              border-radius: 100%;
+            }
+            &:nth-child(2){
+              margin-top: .5rem !important;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+        .popupMain{
+          color:#aba8a8;
+          width: 99.6%;
+          p{
+            margin: 0 !important;
+            line-height: 3rem;
+            border-bottom: 1px solid #aba8a8;
+            &:nth-child(1){
+              span{
+                margin-left: 3.5rem !important;
+              }
+            }
+            &:nth-child(2){
+              span{
+                margin-left: 2.5rem !important;
+                }
+              }
+              &:nth-child(3){
+                span{
+                   margin-left: 4.5rem !important;
+                }
+              }
+          }
+        }
+      }
+    }
+  }
