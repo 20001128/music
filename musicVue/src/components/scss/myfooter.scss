@@ -1,0 +1,154 @@
+  .footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: .5rem 0;
+    background: linear-gradient(to right, white, gray);
+    .footer_main{
+      display: flex;
+      .footer_contentLeft{
+        width: 70%;
+        align-items: center;
+        display: flex;
+        float: left;
+        border-radius: 100%;
+        margin: -.1rem 0 0 .5rem;
+        height: 3.5rem;
+        img{
+          width: 4rem;
+          height: 4rem;
+          border-radius: 100%;
+        }
+        .footer_contentLeft_songName{
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          margin-left: .5rem;
+          p{
+            margin: .2rem 0 0 .1rem !important;
+            float: left;
+          }
+          .maxLength{
+              font-size: .4rem;
+          }
+        }
+      }
+        .footer_contentRight{
+          display: inline;
+          float: right;
+          margin-right: .7rem;
+          width: 20%;
+        .footer_contentRight_menu{
+          display: flex;
+          p{
+            margin-left: .5rem;
+            img{
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .popup{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+    filter: alpha(opacity=60);  
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1000;
+    .empty{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 50%;
+      cursor: pointer;
+      z-index: 9999;
+    }
+    .popupContent{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      background-color: #eee;
+      z-Index: 9999;
+      .popupContent_head{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 .5rem;
+        border-bottom: 1px solid #e6e6e6;
+        p{
+          margin: .5rem 0 !important;
+          img{
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+      .popupContent_body{
+        margin: 0 .5rem;
+        .popupContent_body_list{
+           .popupContent_left{
+              padding: .7rem 0;
+              display: flex;
+              justify-content: space-between;
+              border-bottom: 1px solid #e6e6e6;
+              align-items: center;
+              p{
+                margin: 0 !important;
+                &:nth-child(1){
+                  width: 90%;
+                  display: flex;
+                  align-items: center;
+                  span:nth-child(2){
+                    margin-left: .4rem;
+                  }
+                }
+                &:nth-child(2){
+                   img{
+                     margin-right: .2rem;
+                   }
+                }
+                img{
+                  width: 1rem;
+                  height: 1rem;
+                }
+              }
+           }
+        }
+      }
+    }
+  }
+  @-webkit-keyframes spin { /*兼容性写法。spin是关键帧的动画名称*/
+    from { /*动画起始状态*/
+      -webkit-transform: rotate(0deg);
+    }
+    to { /*动画结束状态*/
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .footer_contentLeft img{
+    -webkit-animation: spin 10s linear infinite;/*鼠标hover时，i图标旋转,infinite表示动画无限循环*/
+    animation: spin 10s linear infinite;
+  }
+  .showListening{
+    color: #d81e06;
+  }
+  .listening{
+    display: none;
+  }

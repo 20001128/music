@@ -1,0 +1,108 @@
+ .songTypeMain{
+    height: 85vh;
+    overflow: hidden;
+    background: url('../../../assets/images/homeIndex/bgImg.jpg') no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    background-position: center center;
+    .singerSearch{
+      display: flex;
+      align-items: center;
+      padding: .4rem 0;
+      background: #767171;
+      /* height: 100%; */
+      opacity: 0.5;
+      color: white;
+      .weui-cell{
+        width: 81% !important;
+        border-radius: .5rem;
+        background: white;
+        margin: 0 .3rem;
+        padding: .4rem !important;
+        .submit{
+           margin-left: .3rem;
+           color: white;
+        }
+        .weui-input{
+          color: black !important;
+        }
+     }
+    }
+    .songContent{
+      color: white;
+      background: #767171;
+      height: 100%;
+      opacity: 0.5;
+      .china{
+        margin-bottom: .3rem;
+        background: #404040;
+      .chinaSinger{
+        border-bottom: 1px solid gray;
+        p{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: .5rem !important;
+          img{
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+      }
+      .Jepan{
+        margin-bottom: .3rem;
+        background: #404040;
+      .JepanSinger{
+         border-bottom: 1px solid gray;
+        p{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: .5rem !important;
+          img{
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+      }
+      .OuMei{
+        margin-bottom: .3rem;
+        background: #404040;
+      .OuMeiSinger{
+        border-bottom: 1px solid gray;
+        p{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: .5rem !important;
+          img{
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+      }
+      .hanguo{
+        margin-bottom: .3rem;
+        background: #404040;
+      .hanguoSinger{
+        border-bottom: 1px solid gray;
+        p{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: .5rem !important;
+          img{
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+      }
+    }
+    .border{
+      border-bottom: none !important;
+    }
+  }

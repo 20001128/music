@@ -1,0 +1,219 @@
+.footerMain{
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background: #aaa;
+		.fleg-img{
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				transition: all 0.5s;
+				right: 0;
+				z-index: -1;
+				background-image: url(http://oiq8j9er1.bkt.clouddn.com/music_%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.jpg);
+				filter: blur(35px);
+				background-size: cover;
+				background-position: center center;
+		}
+		.footerHead{
+			width: 100%;
+			height: 10vh;
+			border-bottom: 1px solid #b4b1af;
+			ul{
+				display: flex;
+				align-items: center;
+				padding: 0 !important;
+				margin-top: .5rem !important;
+				li{
+					list-style: none;
+					text-align: center;
+					&:nth-child(1),&:nth-child(3){
+						width: 10%;
+						padding-left: 1.2rem;
+            text-align: -webkit-left;
+						img{
+							width: 1.5rem;
+              height: 1.5rem;
+						}
+					}
+					&:nth-child(2){
+						width: 70%;
+						p{
+							margin: .3rem 0 !important;
+						}
+					}
+				}
+			}
+		}
+		.borderStyle{
+			height: .1rem;
+			margin: 0 1rem;
+			opacity: 0.6;
+			background: -webkit-linear-gradient(right, white ,gray , white);
+			background: -o-linear-gradient(right, white ,gray , white);
+			background: -moz-linear-gradient(right, white ,gray , white);
+			background: linear-gradient(to right, white ,gray , white);
+		}
+		.footerBody{
+			 height: 66vh;
+			 display: flex;
+			 justify-content: center;
+		   align-items: center;
+			 .footerBodyBorder{
+				  border-radius: 100%;
+					box-shadow: 0px 1px 12px #2a302e;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img{
+						width: 40vh;
+						height: 39vh;
+						border-radius: 100%;
+						animation: spin 40s linear infinite;
+			    }
+			 }
+		}
+		.footerBodyLyric{
+			 height: 66vh;
+			 .showLyric{
+				 display: flex;
+				 align-items: center;
+				 flex-direction: column;
+				 color:rgba(255,255,255,0.4);
+					 p{
+						 margin: .4rem 0 !important;
+					 }
+			 }
+		}
+		.footerBottom{
+			height: 26vh;
+			.footerBottomOperation{
+				margin: 1rem 3rem;
+				ul{
+					padding: 0;
+					display: flex;
+					justify-content: space-between;
+					li{
+						img{
+							width: 1.8rem;
+              height: 1.8rem;
+						}
+					}
+				}
+			}
+			.footerBodyRange{
+				height:6vh
+			}
+			.footerBodyPlayer{
+					height: 24vh;
+				.footerBodyPlayer_ower{
+					margin: 1rem 3rem;
+					ul{
+						padding: 0;
+						display: flex;
+						justify-content: space-between;
+            align-items: center;
+						li{
+							img{
+								width: 1.5rem;
+								height: 1.5rem;
+							}	
+						    &:nth-child(3){
+								img{
+									width: 1.8rem;
+									height: 1.8rem;	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.musiclrc{
+		color: white;
+	}
+	  .popup{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+    filter: alpha(opacity=60);  
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1000;
+    .empty{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 50%;
+      z-index: 9999;
+    }
+    .popupContent{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      background-color: #eee;
+      z-Index: 9999;
+      .popupContent_head{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 .5rem;
+        border-bottom: 1px solid #e6e6e6;
+        p{
+          margin: .5rem 0 !important;
+          img{
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+      .popupContent_body{
+        margin: 0 .5rem;
+        .popupContent_body_list{
+           .popupContent_left{
+              padding: .7rem 0;
+              display: flex;
+              justify-content: space-between;
+              border-bottom: 1px solid #e6e6e6;
+              align-items: center;
+              p{
+                margin: 0 !important;
+                &:nth-child(1){
+                  width: 90%;
+                  display: flex;
+                  align-items: center;
+                  span:nth-child(2){
+                    margin-left: .4rem;
+                  }
+                }
+                &:nth-child(2){
+                   img{
+                     margin-right: .2rem;
+                   }
+                }
+                img{
+                  width: 1rem;
+                  height: 1rem;
+                }
+              }
+           }
+        }
+      }
+    }
+  }
